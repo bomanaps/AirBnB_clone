@@ -1,5 +1,4 @@
 # AirBnB_clone
-# Authors: Kevin Kipkoech, Mercy Boma
 
 ***Still to be edited***
 # The console
@@ -24,7 +23,6 @@ manipulate objects via a restful api
 
 # web dynamic
 Load objects from the client using restful api
-
 
 
 ## File and Directories
