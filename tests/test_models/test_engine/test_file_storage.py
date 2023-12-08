@@ -65,7 +65,7 @@ class TestStorageMethods(unittest.TestCase):
             os.rename("tmp.json", "file.json")
         except IOError:
             pass
-
+            
         FileStorage._FileStorage__objects = {}
 
     def test_all_method(self):
@@ -87,8 +87,7 @@ class TestStorageMethods(unittest.TestCase):
         dummy_amenity = Amenity()
 
         # Checks that the objects created above are stored already
-        self.assertIn("BaseModel." + dummy_bm.id,
-                      models.storage.all().keys())
+        self.assertIn("BaseModel." + dummy_bm.id, models.storage.all().keys())
         self.assertIn(dummy_bm, models.storage.all().values())
         self.assertIn("User." + dummy_user.id, models.storage.all().keys())
         self.assertIn(dummy_user, models.storage.all().values())
@@ -98,11 +97,9 @@ class TestStorageMethods(unittest.TestCase):
         self.assertIn(dummy_place, models.storage.all().values())
         self.assertIn("City." + dummy_city.id, models.storage.all().keys())
         self.assertIn(dummy_city, models.storage.all().values())
-        self.assertIn("Amenity." + dummy_amenity.id,
-                      models.storage.all().keys())
+        self.assertIn("Amenity." + dummy_amenity.id, models.storage.all().keys())
         self.assertIn(dummy_amenity, models.storage.all().values())
-        self.assertIn("Review." + dummy_review.id,
-                      models.storage.all().keys())
+        self.assertIn("Review." + dummy_review.id, models.storage.all().keys())
         self.assertIn(dummy_review, models.storage.all().values())
 
         # What if more than one arg were passed to this guy?
@@ -166,7 +163,6 @@ class TestStorageMethods(unittest.TestCase):
         # What happens when an arg is passed? TypeError is raised
         with self.assertRaises(TypeError):
             models.storage.reload(None)
-
 
 if __name__ == "__main__":
     unittest.main()
