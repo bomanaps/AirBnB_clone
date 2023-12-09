@@ -13,7 +13,6 @@ import cmd
 # import json
 # import shlex
 
-
 class HBNBCommand(cmd.Cmd):
   """ The Command processor """
   prompt = "(hbnb)"
