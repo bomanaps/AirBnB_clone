@@ -62,7 +62,7 @@ class HBNBCommand(cmd.Cmd):
             my_model.save()
 
     def do_show(self, arg):
-        """ Show string representaion of an instance passed """
+        """ Show string representation of an instance passed """
         if not arg:
             print("*** Class name missing ***")
             return
