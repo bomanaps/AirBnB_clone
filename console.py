@@ -92,7 +92,7 @@ class HBNBCommand(cmd.Cmd):
         elif argl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
-            print(eval(argl[0])().id)
+            print(eval(argl[2])().id)
             storage.save()
 
     def do_show(self, arg):
