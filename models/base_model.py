@@ -14,13 +14,20 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """
+        Public instance attribute
         Initialize the BaseModel class
+        <class 'BaseModel'> -> to_dict() -> <class 'dict'> -> <class 'BaseModel'>
+        args should not be used
         """
 
         from models import storage
         if not kwargs:
+            # generetes unique id when instance is created 
+            # and converts it to string.
             self.id = str(uuid4())
             self.created_at = self.updated_at = datetime.now()
+            # If its a new instance(not from a dictionary represntation)
+            # call to the method new on storage
             storage.new(self)
         else:
             for key, value in kwargs.items():
@@ -40,6 +47,7 @@ class BaseModel:
 
     def save(self):
         """
+        Public instance method
         Updates 'self.updated_at' with the current datetime
         """
         from models import storage

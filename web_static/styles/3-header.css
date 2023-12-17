@@ -1,4 +1,5 @@
 header {
+<<<<<<< HEAD
       background-color: white;
       height: 70px;
       width: 100%;
@@ -10,4 +11,17 @@ header {
       width: 136px;
       height: 60px;
       left: 20px;
+=======
+    background-color: #484848;
+    color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+>>>>>>> origin/main
 }
