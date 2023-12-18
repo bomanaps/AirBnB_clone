@@ -1,4 +1,14 @@
 footer {
+<<<<<<< HEAD
+      background-color: #00ff00;
+      height: 60px;
+      width: 100%;
+      bottom: 0;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      line-height: 60px;
+=======
     background-color: #00FF00;
     height: 60px;
     width: 100%;
@@ -12,4 +22,5 @@ footer {
 
 footer span {
     color: white;
+>>>>>>> origin/main
 }
