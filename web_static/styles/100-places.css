@@ -1,0 +1,40 @@
+.places article .amenities,
+.places article .reviews {
+    margin-top: 40px;
+}
+
+.places article .amenities h2,
+.places article .reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 5px;
+}
+
+.places article .amenities ul,
+.places article .reviews ul {
+    list-style: none;
+    padding: 0;
+}
+
+.places article .amenities li,
+.places article .reviews li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.places article .amenities li img,
+.places article .reviews li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.places article .reviews h3 {
+    font-size: 14px;
+}
+
+.places article .reviews p {
+    font-size: 12px;
+}
